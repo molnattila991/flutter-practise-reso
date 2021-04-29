@@ -25,7 +25,8 @@ void main() {
         .thenAnswer((realInvocation) async => Right(tNumberTrivia));
 
     //act
-    final result = await useCase.execute(number: tNumber);
+    final result =
+        await useCase(GetConcreteNumberTriviaParams(number: tNumber));
 
     //assert
     expect(result, Right(tNumberTrivia));
