@@ -53,7 +53,7 @@ void main() {
     final tNumberTriviaModel =
         NumberTriviaModel(text: 'test trivia', number: 1);
 
-    test('should call SharedPreferences to cache the data', () async {
+    test('should call asssSharedPreferences to cache the data', () async {
       //arrange
 
       //act
